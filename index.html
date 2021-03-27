@@ -1,23 +1,46 @@
 <!doctype html>
-<html>
+<html lang="ja">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>VSCodeのLiveShareを体験する</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="dist/theme/night.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+		<!-- テキストを左寄せにする -->
+		<style>
+			.reveal .slides {
+			text-align: left;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<!-- タイトル -->
+				<section>
+					<h2>VSCodeのLiveShareを体験してみる</h2>
+				</section>
+				<!-- イントロ -->
+				<section
+					data-markdown="./README.md"
+					data-separator-vertical="^<!-- v -->$"
+				>
+				</section>
+				<!-- メインコンテンツ -->
+				<section
+					data-markdown="./markdowns/main_contents.md"
+					data-separator="^>>>Page$"
+					data-separator-vertical="^\n--\n"
+					data-separator-notes="^Note:"
+				>
+				</section>
 			</div>
 		</div>
 
@@ -33,7 +56,8 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				slideNumber: true,
 			});
 		</script>
 	</body>

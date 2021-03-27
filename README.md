@@ -1,29 +1,44 @@
-<p align="center">
-  <a href="https://revealjs.com">
-  <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text.svg" alt="reveal.js" width="450">
-  </a>
-  <br><br>
-  <a href="https://github.com/hakimel/reveal.js/actions"><img src="https://github.com/hakimel/reveal.js/workflows/tests/badge.svg"></a>
-  <a href="https://slides.com/"><img src="https://s3.amazonaws.com/static.slid.es/images/slides-github-banner-320x40.png?1" alt="Slides" width="160" height="20"></a>
-</p>
+# はじめに
+これはVSコードのLiveShare機能の紹介とその体験をサポートするものです。
 
-reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free. [Check out the live demo](https://revealjs.com/).
+LiveShare機能をホストとして体験してみたい方は以下の手順でこのリポジトリをクローンし、身近な方とLiveShareの素晴らしい機能を体験してみてください。
 
-The framework comes with a broad range of features including [nested slides](https://revealjs.com/vertical-slides/), [Markdown support](https://revealjs.com/markdown/), [Auto-Animate](https://revealjs.com/auto-animate/), [PDF export](https://revealjs.com/pdf-export/), [speaker notes](https://revealjs.com/speaker-view/), [LaTeX support](https://revealjs.com/math/), [syntax highlighted code](https://revealjs.com/code/) and much more.
+<!-- v -->
 
-<h1>
-  <a href="https://revealjs.com/installation" style="font-size: 3em;">Get Started</a>
-</h1>
+### インストールと起動の手順
 
-## Documentation
-The full reveal.js documentation is available at [revealjs.com](https://revealjs.com).
+#### このリポジトリを適当なディレクトリにクローンしてください
 
-## Online Editor
-Want to create your presentation using a visual editor? Try the official reveal.js presentation platform for free at [Slides.com](https://slides.com). It's made by the same people behind reveal.js.
+``` bash
+git clone https://github.com/ryuyaF/LearnVscodeLiveShare.git <path>
+```
 
-## License
+<!-- v -->
 
-MIT licensed
+#### クローンしたディレクトリに移動し、npmインストール後、reveal.jsを起動します
 
-Copyright (C) 2011-2020 Hakim El Hattab, https://hakim.se
-# LearnVscodeLiveShare
+``` bash
+cd <cloneDirectry>
+npm install
+npm start
+
+# もし他のポートを使用したい場合は以下のようにオプションで指定します
+npm start -- --port=xxx
+
+```
+
+<!-- v -->
+
+#### http://localhost:8000 をブラウザで開きます。
+(もし、他のポートを使用している場合は任意にポート番号を変更してください。)
+
+このスライドが表示されていれば成功です。
+
+あとはスライドの説明に従ってLiveShareを体験してみてください。
+
+<!-- v -->
+
+### その他
+このスライドは[reveal.js](https://revealjs.com/)を使用しています。
+
+reveal.jsの詳しい操作方法等は公式の資料を参照してください。
